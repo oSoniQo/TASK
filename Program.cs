@@ -8,3 +8,13 @@ for (int i = 0; i < array.Length; i++)
     array[i] = Console.ReadLine()!;
 }
 Console.WriteLine($"Ваш массив: [{string.Join(", ", array)}]");
+
+int num_of_str = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+    {
+        num_of_str++;
+    }
+}
+string[] newArray = new string[num_of_str];
