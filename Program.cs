@@ -28,3 +28,4 @@ for (int i = 0; i < array.Length; i++)
         index_count++;
     }
 }
+Console.WriteLine($"Новый массив: [{string.Join(", ", newArray)}]");
