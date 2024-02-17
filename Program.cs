@@ -18,3 +18,13 @@ for (int i = 0; i < array.Length; i++)
     }
 }
 string[] newArray = new string[num_of_str];
+
+int index_count = 0;
+for (int i = 0; i < array.Length; i++)
+{
+    if (array[i].Length <= 3)
+    {
+        newArray[index_count] = array[i];
+        index_count++;
+    }
+}
